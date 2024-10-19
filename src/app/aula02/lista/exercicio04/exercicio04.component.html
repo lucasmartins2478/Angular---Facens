@@ -1,0 +1,37 @@
+<div class="{{ classeAlerta }}" role="alert" *ngIf="exibirAlerta">
+  {{ text }}
+</div>
+<div class="form">
+  <div class="mb-3">
+    <label for="nome" class="form-label">Nome:</label>
+    <input name="nome" type="text" class="form-control" [(ngModel)]="nome" />
+  </div>
+  <div class="mb-3">
+    <label for="sexo" class="form-label">Sexo:</label>
+    <select name="sexo" id="sexo" [(ngModel)]="sexo" class="form-select" aria-label="Default select example">
+      <option value="Masculino">Masculino</option>
+      <option value="Feminino">Feminino</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="idade" class="form-label">Idade:</label>
+    <input
+      name="idade"
+      type="number"
+      class="form-control"
+      [(ngModel)]="idade"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="valorAutomovel" class="form-label">Valor do Automovel:</label>
+    <input
+      name="valorAutomovel"
+      type="number"
+      class="form-control"
+      [(ngModel)]="valorAutomovel"
+    />
+  </div>
+  <button type="button" class="btn btn-primary" (click)="calcularApolice()">
+    Calcular Apolice
+  </button>
+</div>

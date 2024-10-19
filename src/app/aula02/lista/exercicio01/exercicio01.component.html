@@ -1,0 +1,27 @@
+<div class="{{classeAlerta}}" role="alert" *ngIf="exibirAlerta">
+  {{text}}
+</div>
+<div class="form">
+  <div class="mb-3">
+    <label for="ac1" class="form-label">Nota AC1:</label>
+    <input name="ac1" type="number" class="form-control" [(ngModel)]="ac1"  />
+  </div>
+  <div class="mb-3">
+    <label for="ac2" class="form-label">Nota AC2:</label>
+    <input name="ac2" type="number" class="form-control" [(ngModel)]="ac2" />
+  </div>
+  <div class="mb-3">
+    <label for="ag" class="form-label">Nota AG:</label>
+    <input name="ag" type="number" class="form-control" [(ngModel)]="ag" />
+  </div>
+  <div class="mb-3">
+    <label for="af" class="form-label">Nota AF:</label>
+    <input name="af" type="number" class="form-control" [(ngModel)]="af" />
+  </div>
+  <button type="button" class="btn btn-primary" (click)="calcularMedia()">
+    Calcular
+  </button>
+</div>
+
+
+

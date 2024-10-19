@@ -2,3 +2,19 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+
+/* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield; /* Para Firefox */
+  appearance: none;
+  margin: 0; /* Remove qualquer margem extra que possa ser adicionada */
+}
+
+/* Para garantir que funcione no Firefox */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

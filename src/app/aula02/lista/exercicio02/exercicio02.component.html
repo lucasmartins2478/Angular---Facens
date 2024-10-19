@@ -1,0 +1,29 @@
+<div class="form">
+  <div class="mb-3">
+    <label for="numero1" class="form-label">Digite um número:</label>
+    <input name="numero1" type="number" class="form-control" [(ngModel)]="numero1"  />
+  </div>
+  <div class="mb-3">
+    <label for="numero2" class="form-label">Digite um número:</label>
+    <input name="numero2" type="number" class="form-control" [(ngModel)]="numero2" />
+  </div>
+  <div class="mb-3">
+    <label for="resultado" class="form-label">Resultado:</label>
+    <input name="resultado" type="number" class="form-control" [(ngModel)]="resultado" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly />
+  </div>
+  <div class="button-wrapper">
+    <button type="button" class="btn btn-primary" (click)="somar()">
+      Somar
+    </button>
+    <button type="button" class="btn btn-primary" (click)="subtrair()">
+      Subtrair
+    </button>
+    <button type="button" class="btn btn-primary" (click)="multiplicar()">
+      Multiplicar
+    </button>
+    <button type="button" class="btn btn-primary" (click)="dividir()">
+      Dividir
+    </button>
+  </div>
+
+</div>

@@ -1,0 +1,17 @@
+<input type="text"
+name="input"
+[ngModel]="texto"
+(ngModelChange)="atualiza($event)"
+
+>
+
+<p>
+    {{texto}}
+</p>
+<h2>Maneira mais fácil</h2>
+<p>
+<input type="text" [(ngModel)]="texto2" name="texto2">
+</p>
+<p>
+    Digitado: {{texto2}}
+</p>
